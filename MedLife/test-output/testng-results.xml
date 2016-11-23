@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="54776" started-at="2016-11-22T20:25:43Z" finished-at="2016-11-22T20:26:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="54776" started-at="2016-11-22T20:25:43Z" finished-at="2016-11-22T20:26:38Z">
+      <class name="mainPgm.SmokeTest">
+        <test-method status="PASS" signature="Install()[pri:0, instance:mainPgm.SmokeTest@224edc67]" name="Install" duration-ms="30110" started-at="2016-11-23T01:55:43Z" finished-at="2016-11-23T01:56:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Install -->
+        <test-method status="PASS" signature="Registration()[pri:0, instance:mainPgm.SmokeTest@224edc67]" name="Registration" duration-ms="1034" started-at="2016-11-23T01:56:13Z" finished-at="2016-11-23T01:56:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration -->
+        <test-method status="PASS" signature="getStarted()[pri:0, instance:mainPgm.SmokeTest@224edc67]" name="getStarted" duration-ms="23406" started-at="2016-11-23T01:56:14Z" finished-at="2016-11-23T01:56:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStarted -->
+      </class> <!-- mainPgm.SmokeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
