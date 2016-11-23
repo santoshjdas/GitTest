@@ -34,6 +34,9 @@ public class Homepage {
 	@AndroidFindBy(xpath=("//android.widget.Button[contains(@content-desc,'Ok') and @index='0']"))
 	public WebElement RegOKButton;
 	
+	@AndroidFindBy(xpath=("//android.widget.Button[contains(@content-desc,'Confirm') and @index='0']"))
+	public WebElement OTPEnteredConfirmButton;
+	
 	//@AndroidFindBy(xpath="//android.widget.EditText[@resource-id=\"userMobile\"]/preceding::android.view.View[1]")
 	//public WebElement MobileNumberForReg ;
 

@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Base64;
 import java.util.List;
+import java.util.Set;
 
 import org.junit.Assert;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -39,7 +40,7 @@ public class SmokeTest {
 	
 	//cap.setCapability("appPackage", "net.one97.paytm");
 	//cap.setCapability("appActivity", "net.one97.paytm.landingpage.activity.AJRMainActivity");
-	cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "2000");
+	cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "5000");
 	
 	driver =new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 	Thread.sleep(5000);
@@ -51,16 +52,26 @@ public class SmokeTest {
 		
 		Homepage pg=new Homepage(driver);
 		//AndroidElement header=driver.findElementById("appHeader");
+		TouchAction acn1 =new TouchAction(driver);
+		acn1.tap(587, 1754).perform();
+		Thread.sleep(2000);
+		TouchAction acn2 =new TouchAction(driver);
+		//acn.tap(header);
+		acn2.tap(130, 181).perform();
 		
 		TouchAction acn3 =new TouchAction(driver);
-		acn3.tap(587, 1754).perform();
-		Thread.sleep(5000);
-		TouchAction acn =new TouchAction(driver);
-		//acn.tap(header);
-		acn.tap(130, 181).perform();
-		TouchAction acn1 =new TouchAction(driver);
-		acn1.tap(296, 662).perform();
-		pg.Signinsignup.click();
+		acn3.tap(305, 810).perform();
+		
+		Thread.sleep(2000);
+		Set <String> Str=driver.getContextHandles();
+		for(String handle: Str){
+			System.out.println(handle);
+		}
+		
+		
+		//TouchAction acn4 =new TouchAction(driver);
+	//	acn4.tap(296, 662).perform();
+		//pg.Signinsignup.click();
 	Thread.sleep(5000);
 	//TouchAction acn2 =new TouchAction(driver);
 	//acn.tap(598, 593).perform();
@@ -71,6 +82,9 @@ public class SmokeTest {
 		//pg.MobileNum.sendKeys(getEncodedPassword());
 	pg.MobileNumForReg.sendKeys("8431039261");
 	pg.RegOKButton.click();
+	Thread.sleep(15000);
+	pg.OTPEnteredConfirmButton.click();
+	
 	
 		
 		
