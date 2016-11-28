@@ -17,6 +17,7 @@ import com.google.common.base.Verify;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.remote.MobilePlatform;
 import repoositories.Homepage;
@@ -58,11 +59,17 @@ public class SmokeTest {
 		TouchAction acn2 =new TouchAction(driver);
 		//acn.tap(header);
 		acn2.tap(130, 181).perform();
-		
+		driver.pressKeyCode(AndroidKeyCode.BACK);
+		driver.pressKeyCode(AndroidKeyCode.BACK);
+		driver.pressKeyCode(AndroidKeyCode.BACK);
+		driver.startActivity("com.UCMobile.int1", "com.uc.browser.InnerUCMobile");
+		System.out.println(driver.getContextHandles());
 		TouchAction acn3 =new TouchAction(driver);
 		acn3.tap(305, 810).perform();
 		
 		Thread.sleep(2000);
+		//driver.startActivity("com.UCMobile.int1", "com.uc.browser.InnerUCMobile");
+		System.out.println(driver.getContextHandles());
 		Set <String> Str=driver.getContextHandles();
 		for(String handle: Str){
 			System.out.println(handle);
@@ -78,12 +85,13 @@ public class SmokeTest {
 		//driver.hideKeyboard();
 	pg.Regester.click();
 	Thread.sleep(4000);
-	
+	String s="ssss";
 		//pg.MobileNum.sendKeys(getEncodedPassword());
 	pg.MobileNumForReg.sendKeys("8431039261");
 	pg.RegOKButton.click();
 	Thread.sleep(15000);
 	pg.OTPEnteredConfirmButton.click();
+	
 	
 	
 		

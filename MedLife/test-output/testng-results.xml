@@ -2,42 +2,52 @@
 <testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44561" started-at="2016-11-23T11:48:49Z" finished-at="2016-11-23T11:49:34Z">
+  <suite name="Default suite" duration-ms="30072" started-at="2016-11-25T07:17:00Z" finished-at="2016-11-25T07:17:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44561" started-at="2016-11-23T11:48:49Z" finished-at="2016-11-23T11:49:34Z">
+    <test name="Default test" duration-ms="30072" started-at="2016-11-25T07:17:00Z" finished-at="2016-11-25T07:17:30Z">
       <class name="mainPgm.SmokeTest">
-        <test-method status="PASS" signature="Install()[pri:0, instance:mainPgm.SmokeTest@224edc67]" name="Install" duration-ms="32002" started-at="2016-11-23T17:18:50Z" finished-at="2016-11-23T17:19:22Z">
+        <test-method status="PASS" signature="Install()[pri:0, instance:mainPgm.SmokeTest@224edc67]" name="Install" duration-ms="24460" started-at="2016-11-25T12:47:00Z" finished-at="2016-11-25T12:47:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Install -->
-        <test-method status="PASS" signature="Registration()[pri:0, instance:mainPgm.SmokeTest@224edc67]" name="Registration" duration-ms="958" started-at="2016-11-23T17:19:22Z" finished-at="2016-11-23T17:19:23Z">
+        <test-method status="PASS" signature="Registration()[pri:0, instance:mainPgm.SmokeTest@224edc67]" name="Registration" duration-ms="495" started-at="2016-11-25T12:47:25Z" finished-at="2016-11-25T12:47:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Registration -->
-        <test-method status="FAIL" signature="getStarted()[pri:0, instance:mainPgm.SmokeTest@224edc67]" name="getStarted" duration-ms="11421" started-at="2016-11-23T17:19:23Z" finished-at="2016-11-23T17:19:34Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="getStarted()[pri:0, instance:mainPgm.SmokeTest@224edc67]" name="getStarted" duration-ms="4977" started-at="2016-11-25T12:47:25Z" finished-at="2016-11-25T12:47:30Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Can't locate an element by this strategy: Locator map: 
-- native content: "By.xpath: //android.widget.Button[contains(@content-desc,'New here? Register with us') and @index='0']" 
-- html content: "by id or name "Regester""
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Unable to launch the app: Error: Activity used to start app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.54 seconds
 Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:16 -0700'
 System info: host: 'Lenovo', ip: '192.168.2.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
-Driver info: driver.version: unknown]]>
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C:\App\base.apk, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=A001, platform=LINUX, desired={app=C:\App\base.apk, newCommandTimeout=5000, platformName=Android, deviceName=A001}, newCommandTimeout=5000, platformVersion=4.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: f4f6dae9-6ce1-4e84-bdb9-08640cc60f1c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: 
-- native content: "By.xpath: //android.widget.Button[contains(@content-desc,'New here? Register with us') and @index='0']" 
-- html content: "by id or name "Regester""
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to launch the app: Error: Activity used to start app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.54 seconds
 Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:16 -0700'
 System info: host: 'Lenovo', ip: '192.168.2.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
-Driver info: driver.version: unknown
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.click(<generated>)
-	at mainPgm.SmokeTest.getStarted(SmokeTest.java:79)
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C:\App\base.apk, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=A001, platform=LINUX, desired={app=C:\App\base.apk, newCommandTimeout=5000, platformName=Android, deviceName=A001}, newCommandTimeout=5000, platformVersion=4.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: f4f6dae9-6ce1-4e84-bdb9-08640cc60f1c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:32)
+	at io.appium.java_client.android.AndroidDriver.startActivity(AndroidDriver.java:266)
+	at io.appium.java_client.android.AndroidDriver.startActivity(AndroidDriver.java:291)
+	at mainPgm.SmokeTest.getStarted(SmokeTest.java:65)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -65,7 +75,7 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getStarted -->

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="SmokeSuite" verbose="1" parallel="tests"
+	thread-count="5">
+	<!-- <listeners> <listener class-name="org.uncommons.reportng.HTMLReporter" 
+		/> <listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> </listeners> -->
+
+	<tests>
+
+		<test name="run on device 1">
+
+			<classes>
+				<parameter name="port" value="4723" />
+				<parameter name="device" value="192.168.2.37:5555"></parameter>
+
+				<class name="Deflt.mainpgm">
+					<methods>
+
+						<include name="ValidLoginTest" />
+						<include name="InvalidValidLoginTest" />
+						<exclude name="Shoponpaytm" />
+					</methods>
+				</class>
+			</classes>
+		</test>
+
+		
+	</tests>
+</suite>
