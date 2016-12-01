@@ -5,9 +5,8 @@
     <classes>
       <class name="testcases.SmokeTest">
         <methods>
-          <include name="VerifyVideosMenu"/>
           <include name="Setup"/>
-          <include name="signup"/>
+          <include name="VerifyVisitDemoPage"/>
         </methods>
       </class> <!-- testcases.SmokeTest -->
     </classes>

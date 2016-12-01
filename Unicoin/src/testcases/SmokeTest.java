@@ -49,6 +49,8 @@ public SignupPage signup;
 		}
 	@Test(enabled=true)
 	public void VerifyVideosMenu() throws InterruptedException, IOException{
+	//	.//*[@id='email']
+		
 		hm=new HomePage(driver); 
 		//Actions acn=new Actions(driver);  
 		// ele=
@@ -94,9 +96,11 @@ public SignupPage signup;
 		System.out.println(VisitDemoButtonEnabled);
 		hm.GetStarted().click();
 		//driver.navigate().back();
-		driver.findElement(By.xpath(".//*[@id='menubardivid']/ul/li[3]/a")).click();
-		driver.findElement(By.xpath(".//*[@id='menubardivid']/ul/li[4]/a")).click();
-		hm.Supportlink().click();
+		
+		hm.Resourcesbtn().click();
+		hm.Supportlink().click();Thread.sleep(9000);
+		Thread.sleep(4000);
+		
 		
 		//WebElement table=driver.findElement(By.className("grey outerroundedbox"));
 		//List<WebElement> NumofRows=table.findElements(By.tagName("tr"));
@@ -131,13 +135,14 @@ public SignupPage signup;
 	}*/
 	@Test
 	public void signup() throws InterruptedException{
-		Thread.sleep(9000);
+		
+		signup=new SignupPage(driver);
 		signup.Signuplink().click();
 		signup.SignupEmailId().sendKeys("dsantosh.das@gmail.com");
 		signup.SignupPassword().sendKeys("S12345678");
 		//signup.CouponCode().click();
 		//signup.CouponCode().sendKeys("xyz");
-	int number=CapchaFrameswitch(driver,By.xpath(".//*[@id='recaptcha-anchor']/div[5]"));
+/*	int number=CapchaFrameswitch(driver,By.xpath(".//*[@id='recaptcha-anchor']/div[5]"));
 	driver.switchTo().frame(number);
 	driver.findElement(By.xpath(".//*[@id='recaptcha-anchor']/div[5]")).click();
 	
@@ -146,8 +151,9 @@ public SignupPage signup;
 		signup.signupButton().click();
 		
 	
-	}
-	public  int CapchaFrameswitch(WebDriver driver,By by){
+	}*/
+	/*
+	 public  int CapchaFrameswitch(WebDriver driver,By by){
 		int i;
 		int count=driver.findElements(By.tagName("iframe")).size();
 		for( i=0;i<count;i++)
@@ -166,5 +172,7 @@ public SignupPage signup;
 		}
 		driver.switchTo().defaultContent();
 		return i;
+	} 
+	 */
 	}
 }
