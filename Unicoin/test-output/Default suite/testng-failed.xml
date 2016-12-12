@@ -5,8 +5,12 @@
     <classes>
       <class name="testcases.SmokeTest">
         <methods>
+          <include name="RegUserSignup"/>
           <include name="Setup"/>
-          <include name="VerifyVisitDemoPage"/>
+          <include name="signup"/>
+          <include name="LoginTestForReguser"/>
+          <include name="signupclick"/>
+          <include name="signupNegativeScenariosTest"/>
         </methods>
       </class> <!-- testcases.SmokeTest -->
     </classes>

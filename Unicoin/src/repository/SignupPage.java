@@ -57,4 +57,17 @@ public class SignupPage {
 		return signupButton;
 		
 	}
+	@FindBy(xpath=".//*[@id='myModalLabel']")
+public  WebElement signupError;
+	
+	public WebElement signupError(){
+		return signupError;
+		
+	}
+	@FindBy(xpath=".//*[@id='registerok']")
+	public  WebElement signupErrOKButton;
+	public WebElement signupErrOKButton(){
+		return signupErrOKButton;
 }
+		
+}		
