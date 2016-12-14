@@ -30,7 +30,8 @@ public class submerge {
 
 		      for (int i = 1; i < 9; i += 2) {
 		      for (int j = 0; j < 8 - i / 2; j++)
-	          System.out.print(" ");
+	        
+		    	  System.out.print(" ");
 
 		      if(fullString.startsWith("+")){
 
@@ -54,9 +55,9 @@ public class submerge {
 		    }
 
 
-		    for (int i =5 ; i > 0; i -= 2) {
+		    for (int a =5 ; a > 0; a -= 2) {
 
-		      for (int j = 0; j < 8 - i / 2; j++)
+		      for (int b = 0; b < 8 - a / 2; b++)
 
 		        System.out.print(" ");
 
@@ -66,7 +67,7 @@ public class submerge {
 
 		      }
 
-		      for (int j = 0; j < i; j++){
+		      for (int b = 0; b < a; b++){
 
 		        System.out.print(fullString.substring(0, 1));
 
@@ -86,11 +87,11 @@ public class submerge {
 
 		String fullString1="";
 
-		for (int i = 1; i < 9; i += 2) {
+		for (int a = 1; a < 9; a += 2) {
 
 		 
 
-		      for (int j = 0; j < 8 - i / 2; j++)
+		      for (int b = 0; b < 8 - a / 2; b++)
 
 		        System.out.print(" ");
 
@@ -98,9 +99,9 @@ public class submerge {
 
 		      int number=0;
 
-		      for (int j = 0; j < i; j++){
+		      for (int b = 0; b < a; b++){
 
-		      fullString1="UNICOIN";
+		      fullString1="UNOCOIN";
 
 
 		      number++;
@@ -117,15 +118,15 @@ public class submerge {
 		    }
 
 
-		    for (int i =5 ; i > 0; i -= 2) {
+		    for (int a =5 ; a > 0; a -= 2) {
 
-		      for (int j = 0; j < 8 - i / 2; j++)
+		      for (int b = 0; b < 8 - a / 2; b++)
 
 		        System.out.print(" ");
 
 		      int number=0;
 
-		      for (int j = 0; j < i; j++){
+		      for (int b = 0; b < a; b++){
 
 		      fullString1="UNOCOIN";
 
