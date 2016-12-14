@@ -20,17 +20,10 @@ public class QuickSort {
          
         int i = lowerIndex;
         int j = higherIndex;
-        // calculate pivot number, I am taking pivot as middle index number
         int index = lowerIndex+(higherIndex-lowerIndex)/2;
         Student pivot = array.get(index);
-        // Divide into two arrays
         while (i <= j) {
-            /**
-             * In each iteration, we will identify a number from left side which 
-             * is greater then the pivot value, and also we will identify a number 
-             * from right side which is less then the pivot value. Once the search 
-             * is done, then we exchange both numbers.
-             */
+           
             while (array.get(i).total > pivot.total) {
                 i++;
             }
@@ -39,12 +32,11 @@ public class QuickSort {
             }
             if (i <= j) {
                 exchangeNumbers(i, j);
-                //move index to next position on both sides
                 i++;
                 j--;
             }
         }
-        // call quickSort() method recursively
+       
         if (lowerIndex < j)
             quickSort(lowerIndex, j);
         if (i < higherIndex)
@@ -80,19 +72,16 @@ public class QuickSort {
 
         students.add(studentKeyboard);
         }
-    //	Student student1= new Student("Raj",30, 50, 40);
+    //	Student student1= new Student("SantoshDas",89, 90, 80);
     //	Student student2 = new Student("Simran", 50, 70, 50);
    // 	Student student3 = new Student("Raj", 40, 40, 30);
-    //	Student student4 = new Student("Das", 99, 98, 100);
-    //	Student student5 = new Student("Sandy", 80, 20, 10);
-   // 	Student student6 = new Student("Balu", 35, 35, 35);
+    //	Student student4 = new Student("Das", 99, 67, 10)
 
     	/*students.add(student1);
     	students.add(student2);
     	students.add(student3);
     	students.add(student4);
-    	students.add(student5);
-    	students.add(student6);*/
+    	*/
 
         sorter.sort(students);
         System.out.println("Rank || Name || English || Maths || Science || Total");
