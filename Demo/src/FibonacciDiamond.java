@@ -25,12 +25,16 @@ public class FibonacciDiamond {
 	  n2=n3;    
 	}
 
-	 // System.out.println(fullString);
+	  System.out.println(fullString);
 
 
 	System.out.print("\n");
 
 	      for (int i = 1; i < 9; i += 2) {
+	     
+	      //The spaces are to be more in the beginning lines and gradually should reduce
+	      //so we have to condier the condition of 8-i/2 number of spaces.
+	      //As i increases 8-i/2 reduces.     
 	      for (int j = 0; j < 8 - i / 2; j++)
           System.out.print(" ");
 
